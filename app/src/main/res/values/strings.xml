@@ -15,4 +15,6 @@
     <string name="btnText">Login</string>
     <string name="textSix">New user?</string>
     <string name="textSevem">Signup</string>
+    <string name="fullName">Full Name</string>
+    <string name="btnRegister">SignUp</string>
 </resources>

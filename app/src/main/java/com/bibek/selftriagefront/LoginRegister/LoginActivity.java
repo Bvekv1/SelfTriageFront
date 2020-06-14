@@ -29,7 +29,8 @@ public class LoginActivity extends AppCompatActivity {
                 StrictModeClass.StrictMode();
         LoginLogic loginLogic = new LoginLogic();
         if(loginLogic.checkUser(etEmail.getText().toString(),etPassword.getText().toString()) == true){
-
+             Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+             startActivity(intent);
             Toast.makeText(LoginActivity.this,"Login Sucess", Toast.LENGTH_SHORT).show();
         }
 //                Sign();
