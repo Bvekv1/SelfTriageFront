@@ -11,6 +11,9 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface SelfTriageAPI {
+    @POST("registerUser")
+    Call<SignUpResponse> registerUser(@Body Users users);
+
     @FormUrlEncoded
     @POST("/loginUser")
     Call<SignUpResponse> checkUser(@Field("email") String email, @Field("password") String password);
