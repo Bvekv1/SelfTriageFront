@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bibek.selftriagefront.BBL.LoginLogic;
+import com.bibek.selftriagefront.DashBoard.UserDashBoardActivity;
 import com.bibek.selftriagefront.R;
 import com.bibek.selftriagefront.StrictMode.StrictModeClass;
 
@@ -38,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 StrictModeClass.StrictMode();
         LoginLogic loginLogic = new LoginLogic();
         if(loginLogic.checkUser(etEmail.getText().toString(),etPassword.getText().toString()) == true){
-             Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+             Intent intent = new Intent(LoginActivity.this, UserDashBoardActivity.class);
              startActivity(intent);
             Toast.makeText(LoginActivity.this,"Login Sucess", Toast.LENGTH_SHORT).show();
         }
