@@ -13,12 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".DashBoard.UserDashBoardActivity"></activity>
+<!--        <activity android:name=".stepcounter.StepCounterActivity"></activity>-->
+        <activity android:name=".DashBoard.UserDashBoardActivity" />
         <activity android:name=".LoginRegister.RegisterActivity" /> <!-- <activity android:name=".LoginRegister.LoginActivity"></activity> -->
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".LoginRegister.LoginActivity">
+        <activity android:name=".stepcounter.StepCounterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
