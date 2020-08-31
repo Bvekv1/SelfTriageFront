@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.bibek.selftriagefront.R;
+
 public class StepCounterActivity extends AppCompatActivity {
 
     @Override
