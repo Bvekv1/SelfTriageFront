@@ -73,6 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_gender"
         >
         <RadioButton
             android:id="@+id/rbMale"
@@ -106,6 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_temp"
         >
         <RadioButton
             android:id="@+id/rbNormal"
@@ -136,18 +138,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_fatigue"
         >
         <RadioButton
             android:id="@+id/rbYes"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="Normal"
+            android:text="yes"
             android:layout_height="wrap_content"/>
         <RadioButton
             android:id="@+id/rbNo"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="Mild Fever"
+            android:text="No"
             android:layout_height="wrap_content"/>
 
     </RadioGroup>
@@ -161,18 +164,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_breathe"
         >
         <RadioButton
             android:id="@+id/rbShortYes"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="Normal"
+            android:text="Yes"
             android:layout_height="wrap_content"/>
         <RadioButton
             android:id="@+id/rbShortNo"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="Mild Fever"
+            android:text="No"
             android:layout_height="wrap_content"/>
 
     </RadioGroup>
@@ -186,18 +190,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_bodyPain"
         >
         <RadioButton
             android:id="@+id/rbPainYes"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="Normal"
+            android:text="Yes"
             android:layout_height="wrap_content"/>
         <RadioButton
             android:id="@+id/rbPainNo"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="Mild Fever"
+            android:text="No"
             android:layout_height="wrap_content"/>
 
     </RadioGroup>
@@ -211,6 +216,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_diarrhoea"
         >
         <RadioButton
             android:id="@+id/rbDihYes"
@@ -236,6 +242,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_runnynose"
         >
         <RadioButton
             android:id="@+id/rbRunnyYes"
@@ -261,6 +268,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_nausea"
         >
         <RadioButton
             android:id="@+id/rbNauseaYes"
@@ -286,6 +294,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:id="@+id/rg_travel"
         >
         <RadioButton
             android:id="@+id/rbQuestionYes"
@@ -307,7 +316,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="SubmitForm"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:id="@+id/btn_submit"
+        />
 
 </LinearLayout>
     </ScrollView>
