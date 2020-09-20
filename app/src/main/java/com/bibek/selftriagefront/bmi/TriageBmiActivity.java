@@ -45,15 +45,15 @@ public class TriageBmiActivity extends AppCompatActivity implements  View.OnClic
             CalculateBMI cal = new CalculateBMI(Weight, Height);
             bmi = cal.BMI();
             appendStuffs();
-            if (bmi < 16) {
-                etStatus.setText("underweight");
-            } else if(bmi <25){
-                etStatus.setText("normal");
-            } else if(bmi<30){
-                etStatus.setText("overweight");
+            if (bmi < 18.5) {
+                etStatus.setText("Underweight, visit they physican your bmi index is to low");
+            } else if(bmi <= 24.9){
+                etStatus.setText("Normal, You are healthy");
+            } else if(bmi <= 29.9){
+                etStatus.setText("overweight, Reconsider your diet and visit the doctor immediately");
             }
             else {
-                etStatus.setText("obese");
+                etStatus.setText("Obese, Your health is at great risk visit doctor");
             }
             EtHeight.getText().clear();
             EtWeight.getText().clear();
