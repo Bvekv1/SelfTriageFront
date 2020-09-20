@@ -47,7 +47,7 @@ public class TriageBmiActivity extends AppCompatActivity implements  View.OnClic
             appendStuffs();
             if (bmi < 18.5) {
                 etStatus.setText("Underweight, visit they physican your bmi index is to low");
-            } else if(bmi <= 24.9){
+            } else if(bmi >= 24.9){
                 etStatus.setText("Normal, You are healthy");
             } else if(bmi <= 29.9){
                 etStatus.setText("overweight, Reconsider your diet and visit the doctor immediately");
