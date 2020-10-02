@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import com.bibek.selftriagefront.MainActivity;
 import com.bibek.selftriagefront.R;
 
@@ -24,6 +25,11 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
     private int numSteps;
     private TextView TvSteps;
     private Button BtnStart, BtnStop;
+=======
+import com.bibek.selftriagefront.R;
+
+public class StepCounterActivity extends AppCompatActivity {
+>>>>>>> triageBMI
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

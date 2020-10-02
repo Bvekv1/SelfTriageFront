@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bmi.TriageBmiActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Triage Your BMI"
+        android:layout_gravity="center"
+        android:textColor="	#0000CD"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/TxtWeight"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Weight"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:id="@+id/EtWeight"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="60kg"
+            android:background="@drawable/round_edittext"
+            android:layout_marginLeft="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+        <TextView
+            android:id="@+id/TxtHeight"
+            android:layout_width="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Height"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="25dp"
+
+            />
+           <TextView
+               android:id="@+id/tvnote"
+               android:layout_width="200dp"
+               android:layout_marginLeft="15dp"
+               android:layout_height="wrap_content"
+               android:text="(In centimetre)"
+               android:textColor="#0000FF"
+               android:textStyle="italic"
+               android:textSize="15dp"
+
+               />
+       </LinearLayout>
+        <EditText
+            android:id="@+id/EtHeight"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edittext"
+            android:hint="205cm"
+            android:layout_marginLeft="15dp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#C7E1FF"
+        android:textSize="30sp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Calculate">
+
+
+    </Button>
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Body mass index (BMI) is the recommended method for diagnosing overweight and obesity"
+        android:textColor="#1520A6"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed-light"
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Tvresult"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#1520A6"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+</LinearLayout>
