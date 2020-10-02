@@ -14,6 +14,7 @@ import com.bibek.selftriagefront.BBL.LoginLogic;
 import com.bibek.selftriagefront.DashBoard.UserDashBoardActivity;
 import com.bibek.selftriagefront.R;
 import com.bibek.selftriagefront.StrictMode.StrictModeClass;
+import com.bibek.selftriagefront.entry.TriageDashActivity;
 
 public class LoginActivity extends AppCompatActivity {
     EditText etEmail, etPassword;
@@ -39,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 StrictModeClass.StrictMode();
         LoginLogic loginLogic = new LoginLogic();
         if(loginLogic.checkUser(etEmail.getText().toString(),etPassword.getText().toString()) == true){
-             Intent intent = new Intent(LoginActivity.this, UserDashBoardActivity.class);
+             Intent intent = new Intent(LoginActivity.this, TriageDashActivity.class);
              startActivity(intent);
             Toast.makeText(LoginActivity.this,"Login Sucess", Toast.LENGTH_SHORT).show();
         }
